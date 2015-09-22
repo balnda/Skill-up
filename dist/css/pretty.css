@@ -44,25 +44,8 @@ body .site-container ul.feed-list {
 body .site-container ul.feed-list li {
   margin: 10px 0px;
   width: 100%;
-  height: 30px;
+  zheight: 30px;
   background-color: aquamarine;
-  /* span.action {
-					display: inline-block;
-					background-color: #87CEFA;
-					color: white;
-					margin: 5px 15px;
-					height:20px;
-					float: left;
-				} */
-}
-body .site-container ul.feed-list li span.timing {
-  display: inline-block;
-  float: right;
-  color: gray;
-  background-color: yellow;
-  margin-right: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 body .site-container ul.feed-list li span.icon {
   display: inline-block;
@@ -80,6 +63,35 @@ body .site-container ul.feed-list li span.detail {
 body .site-container ul.feed-list li span.detail a {
   background-color: #87CEFA;
   color: white;
+}
+body .site-container ul.feed-list li.dazza {
+  background-color: aqua;
+  padding: 5px 70px 5px 45px;
+  position: relative;
+}
+body .site-container ul.feed-list li.dazza:before {
+  background-color: coral;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body .site-container ul.feed-list li.dazza .action {
+  background-color: blue;
+  color: #fff;
+  display: inline-block;
+  padding: 0 5px;
+}
+body .site-container ul.feed-list li.dazza .timing {
+  background-color: coral;
+  float: right;
+  top: 5px;
+  right: 5px;
+  padding: 0 5px;
+  position: absolute;
 }
 /*Styling the scroll-bar*/
 ::-webkit-scrollbar {
